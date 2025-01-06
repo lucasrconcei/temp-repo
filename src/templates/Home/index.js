@@ -77,7 +77,7 @@ const Home = () => {
   );
 }
 
-class Home2 extends Component {
+/* class Home2 extends Component {
 
   state = {
     posts: [],
@@ -118,7 +118,7 @@ class Home2 extends Component {
     const {value} = evt.target;
     this.setState({searchValue: value});
   }
-  
+
   render() {
     const { posts, page, postsPerPage, allPosts, searchValue} = this.state;
     const noMorePost = (page + postsPerPage) >= allPosts.length;
@@ -158,5 +158,5 @@ class Home2 extends Component {
     );
   }
 }
-
+ */
 export default Home;
