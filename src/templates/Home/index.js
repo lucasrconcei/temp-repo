@@ -28,7 +28,7 @@ const Home = () => {
     setPosts(postsAndPhotos.slice(page, postsPerPage));
     setAllPosts(postsAndPhotos);
   }, []);
-  
+
   useEffect(() => {
     handleLoadPosts(0, postsPerPage);
   }, [handleLoadPosts, postsPerPage]);
@@ -118,7 +118,7 @@ class Home2 extends Component {
     const {value} = evt.target;
     this.setState({searchValue: value});
   }
-
+  
   render() {
     const { posts, page, postsPerPage, allPosts, searchValue} = this.state;
     const noMorePost = (page + postsPerPage) >= allPosts.length;
