@@ -78,7 +78,7 @@ class Home extends Component {
           <Posts posts={filteredPosts}/>
         )} 
 
-        {filteredPosts.length == 0 && (
+        {filteredPosts.length === 0 && (
           <p>Não existem posts</p>
         )} 
 
